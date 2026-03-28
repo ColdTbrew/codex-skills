@@ -1,0 +1,4 @@
+interface:
+  display_name: "X Post"
+  short_description: "Collaborate from idea to polished X post"
+  default_prompt: "Use $x-post to help me shape a rough idea into a polished X post, asking a few direction-setting questions before drafting."
