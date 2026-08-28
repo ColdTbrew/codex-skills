@@ -1,0 +1,4 @@
+interface:
+  display_name: "Quick Visualize"
+  short_description: "Fast inline SVG previews without browser validation"
+  default_prompt: "Use $quick-visualize to show this as a fast inline SVG preview."

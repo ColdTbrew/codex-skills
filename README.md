@@ -8,12 +8,20 @@ Each top-level folder is one installable skill.
 
 ```text
 codex-skills/
+├── quick-visualize/
+│   ├── SKILL.md
+│   └── agents/openai.yaml
 ├── x-post/
 │   ├── SKILL.md
 │   └── agents/openai.yaml
 └── scripts/
     └── install-skill.sh
 ```
+
+## Available skills
+
+- `quick-visualize`: fast Codex inline HTML/SVG previews with optional hover details and no browser validation.
+- `x-post`: writing support for X posts.
 
 ## Install a skill
 
