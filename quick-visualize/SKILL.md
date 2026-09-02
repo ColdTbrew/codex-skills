@@ -15,6 +15,10 @@ Show the requested visual immediately with the smallest useful implementation. I
 - Give the visual and each SVG an accessible name or concise `<title>` and `<desc>`.
 - Return the Codex visualization content reference for the fragment in the same response: `visualize{"path":"/absolute/path/to/file.html"}`.
 
+## Theme
+
+- Use a white theme unless the user explicitly requests a different theme. Keep page and chart surfaces white or off-white, text dark, and borders neutral; set equivalent light backgrounds explicitly in Plotly or ECharts configuration.
+
 ## Technology choice
 
 - Use Plotly by default for conventional analytical charts that benefit from axes, legends, hover, or multiple series, including bar, line, scatter, heatmap, and histogram charts.
