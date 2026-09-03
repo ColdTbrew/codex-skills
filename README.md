@@ -8,6 +8,11 @@ Each top-level folder is one installable skill.
 
 ```text
 codex-skills/
+├── agent-browser/
+│   └── SKILL.md
+├── docs-canvas/
+│   ├── SKILL.md
+│   └── agents/openai.yaml
 ├── quick-visualize/
 │   ├── SKILL.md
 │   └── agents/openai.yaml
@@ -20,6 +25,8 @@ codex-skills/
 
 ## Available skills
 
+- `agent-browser`: discovery skill for the agent-browser CLI, including browser automation, screenshots, extraction, and web-app QA.
+- `docs-canvas`: turns documentation, architecture notes, API references, and codebase walkthroughs into navigable Codex canvases.
 - `quick-visualize`: fast Codex inline HTML/SVG previews with optional hover details and no browser validation.
 - `x-post`: writing support for X posts.
 

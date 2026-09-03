@@ -1,0 +1,4 @@
+interface:
+  display_name: "Docs Canvas"
+  short_description: "Turn structured documentation into a navigable canvas"
+  default_prompt: "Use $docs-canvas to turn this material into a navigable documentation canvas."
