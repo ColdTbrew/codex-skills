@@ -26,7 +26,16 @@ Show the requested visual immediately with the smallest useful implementation. I
 - Prefer ECharts when dashboard-style composition, mobile interaction, streaming, or large datasets materially benefit from it.
 - When using Plotly, load the smallest official pinned bundle that supports every requested trace type. Use the full bundle only when needed.
 - For Plotly bar charts, set `layout.barcornerradius: "25%"` unless square corners better fit the subject.
-- If loading an external library is unacceptable or fails in the Codex embed, fall back to handwritten inline SVG.
+- If loading an external library is unacceptable, use handwritten inline SVG alone; otherwise follow the rendering requirements below.
+
+## Reliable rendering in Codex embeds
+
+Plotly-only fragments have displayed blank chart areas in Codex embeds even when the CDN returned HTTP 200 and the JavaScript passed a syntax check. Those checks do not establish that scripts execute or charts render in the embed.
+
+- Never deliver a Plotly-only fragment with empty chart containers. Include a meaningful, visible inline SVG chart in the initial HTML, with the same data, axes, labels, and essential values. The fallback must work without executing JavaScript.
+- Treat Plotly as progressive enhancement: render into a separate container with usable dimensions and replace or hide the SVG only after `Plotly.newPlot` resolves successfully and chart output exists. Keep the SVG visible if library loading or rendering fails, scripts are blocked, or JavaScript never executes.
+- Include a brief initial status indicating that the SVG is displayed and script execution is unconfirmed. Update it after successful enhancement or a detected failure. Do not label a chart as successfully rendered by Plotly just because its SVG fallback is visible.
+- Apply the same SVG-first approach to other script-backed charts. Switching to D3 or ECharts does not by itself fix blocked script execution; a visible SVG does not prove that a library ran.
 
 ## Fast-path boundary
 
