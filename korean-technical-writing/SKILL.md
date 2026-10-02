@@ -1,5 +1,5 @@
 ---
-name: techincal-writing
+name: korean-technical-writing
 description: 한국어 기술 문서, 설치 가이드, 운영 매뉴얼, 장애 대응 절차, API 설명을 작성하거나 교정할 때 사용한다. STE의 명확성 원칙을 한국어에 맞게 적용하며, 일반 대화·창작·홍보 문구에는 자동 적용하지 않는다.
 ---
 
