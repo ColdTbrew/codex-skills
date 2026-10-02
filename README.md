@@ -13,6 +13,9 @@ codex-skills/
 ├── docs-canvas/
 │   ├── SKILL.md
 │   └── agents/openai.yaml
+├── techincal-writing/
+│   ├── SKILL.md
+│   └── agents/openai.yaml
 ├── quick-visualize/
 │   ├── SKILL.md
 │   └── agents/openai.yaml
@@ -31,6 +34,7 @@ codex-skills/
 
 - `agent-browser`: discovery skill for the agent-browser CLI, including browser automation, screenshots, extraction, and web-app QA.
 - `docs-canvas`: turns documentation, architecture notes, API references, and codebase walkthroughs into navigable Codex canvases.
+- `techincal-writing`: writes and edits clear Korean technical documentation using adapted STE principles while preserving conditions, terminology, and technical meaning.
 - `quick-visualize`: fast Codex inline HTML/SVG previews with optional hover details and no browser validation.
 - `vercel-design-md`: applies the bundled Vercel DESIGN.md reference to websites, dashboards, and HTML/SVG previews.
 - `x-post`: writing support for X posts.
