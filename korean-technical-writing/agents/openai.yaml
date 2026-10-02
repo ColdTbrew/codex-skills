@@ -1,4 +1,4 @@
 interface:
-  display_name: "명확한 한국어 기술 문서"
+  display_name: "Korean Technical Writing"
   short_description: "STE 원칙으로 한국어 기술 문서를 명확하게 작성하고 교정"
   default_prompt: "$korean-technical-writing으로 이 한국어 기술 문서를 교정하고 조건, 수치, 예외와 기술적 의미를 보존해 주세요."
