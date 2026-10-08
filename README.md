@@ -16,6 +16,10 @@ codex-skills/
 ├── korean-technical-writing/
 │   ├── SKILL.md
 │   └── agents/openai.yaml
+├── mobbin-design-md/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   └── references/DESIGN.md
 ├── quick-visualize/
 │   ├── SKILL.md
 │   └── agents/openai.yaml
@@ -35,6 +39,7 @@ codex-skills/
 - `agent-browser`: discovery skill for the agent-browser CLI, including browser automation, screenshots, extraction, and web-app QA.
 - `docs-canvas`: turns documentation, architecture notes, API references, and codebase walkthroughs into navigable Codex canvases.
 - `korean-technical-writing`: writes and edits clear Korean technical documentation using adapted STE principles while preserving conditions, terminology, and technical meaning.
+- `mobbin-design-md`: applies the bundled Mobbin DESIGN.md reference to websites, dashboards, documentation, and HTML/SVG previews.
 - `quick-visualize`: fast Codex inline HTML/SVG previews with optional hover details and no browser validation.
 - `vercel-design-md`: applies the bundled Vercel DESIGN.md reference to websites, dashboards, and HTML/SVG previews.
 - `x-post`: writing support for X posts.
