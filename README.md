@@ -20,6 +20,10 @@ codex-skills/
 │   ├── SKILL.md
 │   ├── agents/openai.yaml
 │   └── references/DESIGN.md
+├── mimo-rl-design-md/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   └── references/DESIGN.md
 ├── quick-visualize/
 │   ├── SKILL.md
 │   └── agents/openai.yaml
@@ -39,6 +43,7 @@ codex-skills/
 - `agent-browser`: discovery skill for the agent-browser CLI, including browser automation, screenshots, extraction, and web-app QA.
 - `docs-canvas`: turns documentation, architecture notes, API references, and codebase walkthroughs into navigable Codex canvases.
 - `korean-technical-writing`: writes and edits clear Korean technical documentation using adapted STE principles while preserving conditions, terminology, and technical meaning.
+- `mimo-rl-design-md`: applies the bundled Xiaomi MiMo RL dashboard reference (white canvas, no shadows, hairline cards, monospace numbers) to dashboards, training monitors, and data-heavy HTML/SVG previews.
 - `mobbin-design-md`: applies the bundled Mobbin DESIGN.md reference to websites, dashboards, documentation, and HTML/SVG previews.
 - `quick-visualize`: fast Codex inline HTML/SVG previews with optional hover details and no browser validation.
 - `vercel-design-md`: applies the bundled Vercel DESIGN.md reference to websites, dashboards, and HTML/SVG previews.
