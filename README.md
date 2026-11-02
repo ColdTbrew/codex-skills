@@ -23,6 +23,7 @@ codex-skills/
 ├── mimo-rl-design-md/
 │   ├── SKILL.md
 │   ├── agents/openai.yaml
+│   ├── assets/line-chart.js
 │   └── references/DESIGN.md
 ├── quick-visualize/
 │   ├── SKILL.md

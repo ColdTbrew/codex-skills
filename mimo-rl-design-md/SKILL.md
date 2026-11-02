@@ -17,6 +17,13 @@ Read [references/DESIGN.md](references/DESIGN.md) before styling a surface. It r
 - Group related KPIs in one bordered card split by vertical hairlines rather than separate floating cards.
 - Segmented controls: 1px hairline border, 4px corners, 12.5px text, selected segment filled `#111111` with white text. Do not use pills with shadows.
 - Charts: transparent background, grid `#ececea`, thin 1.5–2px lines, small 3–4px dots, monospace ticks in `#8c8c88`, legend at the card's top right with the latest value beside each series, and the last value labelled at the line end. Default series colors: orange `#e8622c`, blue `#2a78d6`; reference or baseline lines `#9a9a96` dashed.
+- For line charts in plain HTML pages, copy [assets/line-chart.js](assets/line-chart.js) next to the page instead of loading a chart library (MiMo draws its charts with hand-written Canvas 2D). It reads `--text`, `--faint`, `--grid-line`, `--baseline`, `--mono`, and `--surface` from CSS, so define those tokens. Give each host element an explicit height and style the hover readout:
+
+  ```css
+  .lc-tip { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 6px 8px; font: 11.5px/1.5 var(--mono); color: var(--text); }
+  ```
+
+  `LineChart(el, { series: [{ label, color, points: [[x, y]], dash? }], refs: [{ label, value }], integerX?, xDomain?, xTitle?, format? })` returns `{ update, destroy }`; call `update` on data changes instead of recreating the chart. Use a framework's own chart stack only when the project already depends on one.
 - Deltas are small monospace text: `▲0.068` in ink or green, `▼` in red `#d9463f`. Avoid colored badge backgrounds for every number.
 - Tables: monospace 12.5px cells, 11.5px/500 muted headers, 6px 10px padding, hairline row separators, numbers right-aligned, inline thin bar tracks (`#f5f5f4` track, `#2a78d6` fill) for proportions.
 - Dark mode, when the surface supports it: bg `#111111`, surface `#161616`, border `#2a2a29`, ink `#ececea`, secondary `#a3a3a0`, muted `#6f6f6c`, grid `#242423`, accent `#3987e5`.
