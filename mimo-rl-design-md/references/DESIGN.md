@@ -17,6 +17,12 @@ colors:
   accent: "#2a78d6"
   series-1: "#e8622c"
   series-2: "#2a78d6"
+  # series-3..7 extend the measured two-color palette for many-run charts (not measured from MiMo)
+  series-3: "#1a9a4a"
+  series-4: "#8b5cf6"
+  series-5: "#d6409f"
+  series-6: "#0891b2"
+  series-7: "#c98a00"
   baseline: "#9a9a96"
   live: "#d9463f"
   selected-fill: "#111111"
@@ -76,6 +82,7 @@ components:
   kpi-strip: one card, header row (name • state • big mono step) then a row of equal cells split by hairlines; each cell = 12px label + 20px mono value + small mono delta.
   segmented: inline-flex, 1px hairline, 4px radius, segments 12.5px; selected segment bg #111 / text #fff; unselected transparent ink.
   chart-card: 3-up grid; legend top-right listing series swatch dot + name + latest value (mono); end-of-line value label; dots 3–4px; lines 1.5–2px; grid #ececea; no plot background.
+  chart-zoom (extension): mouse drag draws a 10% accent box and zooms to it; flat drag zooms x and refits y; double-click or a small hairline "reset" button (top-right, mono 11px) restores; plot content clips to the plot area while zoomed.
   feed: rows separated by hairlines, mono timestamp column in ink-3, message in ink.
   table: mono, hairline rows, right-aligned numbers, inline bar track (#f5f5f4, height 6px) with accent fill.
   tooltip: white, 1px hairline, 4px radius, mono 12px, no shadow.
